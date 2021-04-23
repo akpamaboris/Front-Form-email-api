@@ -14,7 +14,10 @@ $.addEventListener("DOMContentLoaded", () => {
     };
     console.log(data);
 
-    const response = await axios.post("http://localhost:3000/post", data);
+    const response = await axios.post(
+      "https://api-email-send.herokuapp.com/post",
+      data
+    );
     console.log(response);
   });
 });
